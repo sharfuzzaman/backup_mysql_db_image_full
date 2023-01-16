@@ -49,3 +49,12 @@ You will find a list and please check the word "datadir", and besides datadir yo
 - --backup-image= /home/userDir/backup/local.mbi (This user directory will store your mysql backup image of your database named "local.mbi")
 - --backup-dir= /home/userDir/backup/backup_tmp (This directory stores all additional datas without images)
 - backup-to-image (We are saying please backup this image which we have mentioned earlier)
+
+After that, you will see a directory named backup under your user home directory
+```bash
+    $ cd /home/sharfuzzaman/backup
+    $ ls
+```
+You will see a directory named backup_tmp also.
+
+That means, we have cretaed a successfull backup of our MySQL databases.
