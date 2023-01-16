@@ -1,7 +1,7 @@
 
 # MySQL physical image backup and restore (Linux)
 
-## MySQL physical backup and restore (Linux)
+## MySQL physical backup and restore
 DB version : 8.0.31  
 
 Distribution : Debian  
