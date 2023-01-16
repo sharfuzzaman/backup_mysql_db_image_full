@@ -8,7 +8,7 @@ Distribution : Debian
 
 OS : "Linux Mint 20.2" 
 - Perform a full image backup of database (Single File Backup)
-- Restore a database from a full image backup 
+- Restore the database from that image 
 
 
 ## Download & Install mysqlbackup
