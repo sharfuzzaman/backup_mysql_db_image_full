@@ -26,4 +26,9 @@ After enter the directory you will see couple of .deb file. Install it on your s
     $ dpkg -i mysql-commercial-backup_8.0.31+commercial-1ubuntu20.04_amd64.deb
 ```
 In my case, this is "mysql-commercial-backup_8.0.31+commercial-1ubuntu20.04_amd64.deb" my .deb file, you could see a differnet name but installed as your system.
+After install please check the version of mysqlbackup
+```bash
+    $ mysqlbackup --version
+```
+If you watch a output with version, That means you can move forward to the next step
 
