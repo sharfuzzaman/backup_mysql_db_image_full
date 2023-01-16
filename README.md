@@ -11,7 +11,7 @@ OS : "Linux Mint 20.2"
 - Restore a database from a full image backup 
 
 
-## Documentation
+## Download & Install mysqlbackup
 
 [Download MySQL enterprise backup](https://edelivery.oracle.com/osdc/faces/SoftwareDelivery)  
 After click this link search "MySQL enterprise backup"  
