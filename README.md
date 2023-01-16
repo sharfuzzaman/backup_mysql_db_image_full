@@ -62,3 +62,10 @@ After that, you will see a directory named backup under your user home directory
 You will see a directory named backup_tmp also.
 
 That means, we have cretaed a successfull backup of our MySQL databases.
+
+## Restore database from an image backup
+
+Before restart database make sure your mysql server is not running. Check the status of mysql server, if it is running please stop this
+```bash
+    $ sudo service mysql stop
+```
