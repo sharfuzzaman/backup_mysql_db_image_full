@@ -50,6 +50,10 @@ You will find a list and please check the word "datadir", and besides datadir yo
 - --backup-dir= /home/userDir/backup/backup_tmp (This directory stores all additional datas without images)
 - backup-to-image (We are saying please backup this image which we have mentioned earlier)
 
+After run this command if everything goes find, you will look a message like the screenshot
+
+![App Screenshot](https://github.com/sharfuzzaman/backup_restore_mysql_db_image_full/blob/main/backup-completed.png)
+
 After that, you will see a directory named backup under your user home directory
 ```bash
     $ cd /home/sharfuzzaman/backup
