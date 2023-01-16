@@ -77,3 +77,13 @@ Before restart database make sure your mysql server is not running. Check the st
 ```
 **When you are restoring mysql image make sure there has no mysql directory in  /var/lib/ directory, If mysql directory exists then please move it in another location**.
 
+Run below command for restore the database,
+```bash
+    $ mysqlbackup --user=user --password=password --backup-image=/home/sharfuzzaman/backup/local.mbi --backup-dir=/home/sharfuzzaman/backup/restore_tmp --datadir=/var/lib/mysql copy-back-and-apply-log
+```
+- --user : It is your mysql user
+- --password : mysql user password
+- --backup-image= /home/userDir/backup/local.mbi (This image directory from where the image should restore. "local.mbi is my image name, Could be differnet from your name")
+- --backup-dir= /home/userDir/backup/restore_tmp (When restore is performing some files will generate about restore information. **Make sure, restore_tmp file is not present the directory**)
+- --datadir= In which directory this backup should take place.
+- copy-back-and-apply-log= it is telling copy and restore the image and apply the log.
