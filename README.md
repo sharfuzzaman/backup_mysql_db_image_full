@@ -98,7 +98,7 @@ After that redirect to the mysql directory /var/lib/
 ```
 mysql directory should be created here. Look closely mysql directory's user is root. We have to change the ownership for this direcroty
 ```bash
-    $ sudo chown mysql:mysql /var/lib/mysql
+    $ sudo chown -R mysql:mysql /var/lib/mysql
 ```
 After that try to start your mysql server,
 ```bash
