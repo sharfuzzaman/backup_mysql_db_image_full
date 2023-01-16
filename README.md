@@ -44,7 +44,7 @@ You will find a list and please check the word "datadir", and besides datadir yo
 ```
 
 - --user : It is your mysql user
-- --password : MySQl user password
+- --password : mysql user password
 - --host : Hostname
 - --backup-image= /home/userDir/backup/local.mbi (This user directory will store your mysql backup image of your database named "local.mbi")
 - --backup-dir= /home/userDir/backup/backup_tmp (This directory stores all additional datas without images)
