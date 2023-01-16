@@ -31,4 +31,11 @@ After install please check the version of mysqlbackup
     $ mysqlbackup --version
 ```
 If you watch a output with version, That means you can move forward to the next step
+## MySQl datadir location
+Find where mysql datadir is stored  
+Run,
+```bash 
+    $ mysql -u root -p -e 'SHOW VARIABLES WHERE Variable_Name LIKE "%dir"'
+```
+You will find a list and please check the word "datadir", and besides datadir you can look the localtion, In my case /var/lib/mysql is the directory where MySQL stores data.
 
