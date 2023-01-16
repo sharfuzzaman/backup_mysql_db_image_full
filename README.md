@@ -64,6 +64,12 @@ You will see a directory named backup_tmp also.
 That means, we have cretaed a successfull backup of our MySQL databases.
 
 ## Restore database from an image backup
+For validate the backup run 
+```bash
+    $ mysqlbackup --backup-image=/home/sharfuzzaman.local.mbi validate
+```
+Give the path of the image, if image validates properly then you'll find a response like "mysqlbackup completed OK!
+"
 
 Before restart database make sure your mysql server is not running. Check the status of mysql server, if it is running please stop this
 ```bash
