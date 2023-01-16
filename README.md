@@ -86,4 +86,8 @@ Run below command for restore the database,
 - --backup-image= /home/userDir/backup/local.mbi (This image directory from where the image should restore. "local.mbi is my image name, Could be differnet from your name")
 - --backup-dir= /home/userDir/backup/restore_tmp (When restore is performing some files will generate about restore information. **Make sure, restore_tmp file is not present the directory**)
 - --datadir= In which directory this backup should take place.
-- copy-back-and-apply-log= it is telling copy and restore the image and apply the log.
+- copy-back-and-apply-log= it is telling copy and restore the image and apply the log
+If backup completes then you will be shown a message like this
+<br><br>
+![App Screenshot](https://github.com/sharfuzzaman/backup_restore_mysql_db_image_full/blob/main/restore-completed.png)
+<br><br>
