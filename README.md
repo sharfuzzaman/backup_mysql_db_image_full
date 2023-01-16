@@ -75,3 +75,5 @@ Before restart database make sure your mysql server is not running. Check the st
 ```bash
     $ sudo service mysql stop
 ```
+Make sure, When you are restoring mysql image then there has no mysql directory in  /var/lib/ directory, If mysql directory exists then please move it in another location.
+
