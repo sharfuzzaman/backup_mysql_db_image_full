@@ -91,3 +91,22 @@ If backup completes then you will be shown a message like this
 <br><br>
 ![App Screenshot](https://github.com/sharfuzzaman/backup_restore_mysql_db_image_full/blob/main/restore-completed.png)
 <br><br>
+After that redirect to the mysql directory /var/lib/
+```bash
+    $ cd /var/lib
+    $ ls
+```
+mysql directory should be created here. Look closely mysql directory's user is root. We have to change the ownership for this direcroty
+```bash
+    $ sudo chown mysql:mysql /var/lib/mysql
+```
+After that try to start your mysql server,
+```bash
+    $ sudo service mysql start
+```
+if any error is not there then you already restore the mysql database. If any error is found, just rename the backup-auto.cnf file,
+```bash
+    $ sudo mv /var/lib/mysql/backup-auto.cnf /var/lib/mysql/auto.cnf
+```
+Then again start the mysql server. 
+Hurray!! we have successfully restore the image of full database.
