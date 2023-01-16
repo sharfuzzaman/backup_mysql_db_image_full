@@ -38,4 +38,14 @@ Run,
     $ mysql -u root -p -e 'SHOW VARIABLES WHERE Variable_Name LIKE "%dir"'
 ```
 You will find a list and please check the word "datadir", and besides datadir you can look the localtion, In my case /var/lib/mysql is the directory where MySQL stores data.
+## Make an image backup of full database
+```bash
+    $ mysqlbackup --user=user --password=password --host=127.0.0.1 --backup-image=/home/sharfuzzaman/backup/local.mbi --backup-dir=/home/sharfuzzaman/backup/backup_tmp backup-to-image
+```
 
+- --user : It is your mysql user
+- --password : MySQl user password
+- --host : Hostname
+- --backup-image= /home/userDir/backup/local.mbi (This user directory will store your mysql backup image of your database named "local.mbi")
+- --backup-dir= /home/userDir/backup/backup_tmp (This directory stores all additional datas without images)
+- backup-to-image (We are saying please backup this image which we have mentioned earlier)
